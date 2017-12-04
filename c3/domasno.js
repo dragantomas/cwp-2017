@@ -5,9 +5,9 @@ function sekojTretParenBroj(niza5){
     for (var i = 0; i < niza5.length; i++){
         if (niza5[i] % 2 == 0){
             pb = pb + 1;
-                if (pb == 3) {
-            console.log(niza5[i]);
-            pb = 0;
+            	if (pb == 3) {
+	console.log(niza5[i]);
+				pb = 0;
             }
         }
     }
@@ -26,7 +26,8 @@ function zbirNaNeparniBroevi(niza5){
 		zbir = zbir + niza5[i];
 		}
 	}
-console.log(zbir);
+	console.log(zbir);
+	return zbir;
 }
 
 zbirNaNeparniBroevi(niza5);
@@ -40,8 +41,12 @@ function prosek(niza5){
 		}
 		p = p/niza5.length;
 	console.log(p);
+	return p;
 }
 
 prosek(niza5);
+
+
+
 
 // //47 / 16 = 2.9375
