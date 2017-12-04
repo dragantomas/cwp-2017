@@ -27,7 +27,7 @@ function zbirNaNeparniBroevi(niza){
 		}
 	}
 	console.log(zbir);
-	return zbir;
+		return zbir;
 }
 
 zbirNaNeparniBroevi(niza5);
@@ -40,8 +40,8 @@ function prosek(niza){
 		p = p + niza5[i];
 		}
 		p = p / niza5.length;
-		console.log(p);
-	return p;
+	console.log(p);
+		return p;
 }
 
 prosek(niza5);
