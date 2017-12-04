@@ -1,6 +1,6 @@
 var niza5 = [2, 5, 3, 2, 3, 3, 5, 1, 1, 4, 4, 2, 4, 2, 2, 4];
 
-function sekojTretParenBroj(){
+function sekojTretParenBroj(niza){
 	var pb = 0;
     for (var i = 0; i < niza5.length; i++){
         if (niza5[i] % 2 == 0){
@@ -13,36 +13,38 @@ function sekojTretParenBroj(){
     }
 }
 
-sekojTretParenBroj();
+sekojTretParenBroj(niza5);
 
 // 4
 // 4
 // 4
 
-function zbirNaNeparniBroevi(){
+function zbirNaNeparniBroevi(niza){
 	var zbir = 0;
 	for(var i = 0; i < niza5.length; i++){
 		if (niza5[i] % 2 == 1) {
 		zbir = zbir + niza5[i];
 		}
 	}
+	console.log(zbir);
 	return zbir;
 }
 
-console.log(zbirNaNeparniBroevi());
+zbirNaNeparniBroevi(niza5);
 
 // 21
 
-function prosek(){
+function prosek(niza){
 	var p = 0;
 	for(var i = 0; i < niza5.length; i++){
 		p = p + niza5[i];
 		}
 		p = p / niza5.length;
+		console.log(p);
 	return p;
 }
 
-console.log(prosek());
+prosek(niza5);
 
 
 // 47 / 16 = 2.9375
