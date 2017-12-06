@@ -8,7 +8,7 @@ function sekojTretParenBroj(array){
             pb = pb + 1;
             	if (pb == 3) {
 	console.log(array[i]);
-				pb = 0;
+		pb = 0;
             }
         }
     }
@@ -39,7 +39,7 @@ zbirNaNeparniBroevi(niza1);
 
 function prosek(array){
 	var p = 0;
-	for(var i = 0; i <array.length; i++){
+	for(var i = 0; i < array.length; i++){
 		p = p + array[i];
 		}
 		p = p / array.length;
