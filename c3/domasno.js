@@ -26,11 +26,11 @@ function zbirNaNeparniBroevi(niza){
 		zbir = zbir + niza5[i];
 		}
 	}
-	console.log(zbir);
+	// console.log(zbir);
 		return zbir;
 }
 
-zbirNaNeparniBroevi(niza5);
+console.log(zbirNaNeparniBroevi(niza5));
 
 // 21
 
@@ -40,11 +40,11 @@ function prosek(niza){
 		p = p + niza5[i];
 		}
 		p = p / niza5.length;
-	console.log(p);
+//	console.log(p);
 		return p;
 }
 
-prosek(niza5);
+console.log(prosek(niza5));
 
 
 // 47 / 16 = 2.9375
