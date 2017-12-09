@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+h5 {
+	padding: 0; 
+	margin: 0;
+	font-size: 18px;
+}
+
+.calculator {
+	width: 500px;
+	height: 250px;
+	background-color: lightgray;
+	padding-left: 20px;
+	padding-top: 20px;
+	border-radius: 15px;
+}
+
+.inside {
+	margin-top: 150px;
+	display: block;
+}
+
+.sign {
+	float: left;
+	padding-right: 20px;
+}
+
+.input1 {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
+}
+
+.input2 {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
+}
+
+.output {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
+}
+
+
+
