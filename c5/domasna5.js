@@ -75,7 +75,17 @@ images.forEach(function(v, i){
 	var imagesItem = document.createElement('img');
 	var closeButton = document.createElement('button');
 
-	imagesItem.src='images/img1.jpeg';
+	imagesList.appendChild(imgThumb);
+	imgThumb.appendChild(closeButton);
+	imgThumb.appendChild(imagesItem);
+	
+	closeButton.addEventListener('click', function(){
+	//	images.splice(i, 1);
+		imagesList.removeChild(imagesList.childNodes[i]);
+		console.log(imagesList);
+	});
+
+	imagesItem.src=v.image;
 	
 	imgThumb.innerText = v.title;
 
@@ -83,6 +93,9 @@ images.forEach(function(v, i){
 	imgThumb.appendChild(closeButton);
 	imgThumb.appendChild(imagesItem);
 });
+
+
+
 
 
 
