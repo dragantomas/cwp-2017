@@ -49,9 +49,9 @@ var images = [
 	},
 ];
 
-
-
 var body = document.querySelector('body');
+
+var h1 = document.createElement('h1');
 
 var ul = document.createElement('ul');
 
@@ -61,44 +61,66 @@ var img = document.createElement('img');
 
 var closeButton = document.createElement('button');
 
+h1.appendChild(document.createTextNode("Галерија"));
 
-
-
-document.createElement('li').style.display = "block";
-document.createElement('img').style.display = "block";
-document.createElement('close-button').style.display = "block";
+body.appendChild(h1);
 
 var imagesList = document.createElement('ul');
 
 images.forEach(function(v, i){
 	var imgThumb = document.createElement('li');
 	var imagesItem = document.createElement('img');
+	var title = document.createElement("v.title");
+		title.innerText = v.title;
 	var closeButton = document.createElement('button');
-
-	imagesList.appendChild(imgThumb);
-	imgThumb.appendChild(closeButton);
-	imgThumb.appendChild(imagesItem);
+	var fontAwesome = document.createElement('i');
+		fontAwesome.setAttribute("class","fa fa-times");
 	
+	imagesList.appendChild(imgThumb);
+	closeButton.appendChild(fontAwesome);
+	imgThumb.appendChild(imagesItem);
+	imgThumb.appendChild(title);
+
+imgThumb.addEventListener("mouseover",addCloseButton);
+
+function addCloseButton(){
+	imgThumb.appendChild(closeButton);
+};
+
+imgThumb.addEventListener("mouseleave",removeCloseButton);
+
+function removeCloseButton(){
+	imgThumb.removeChild(closeButton);
+};
+
 	closeButton.addEventListener('click', function(){
-	//	images.splice(i, 1);
-		imagesList.removeChild(imagesList.childNodes[i]);
-		console.log(imagesList);
+		this.parentNode.remove();
 	});
 
-	imagesItem.src=v.image;
+var bigBox = document.createElement('div');
+	bigBox.setAttribute("class", "big-box");
+var bigImage = document.createElement('img');
+var bigBoxImage = document.createElement('big-box-image');
+	bigBoxImage.setAttribute("class", "big-box-image");
+var closeButtonBig = document.createElement('button');
+var bigBoxTitle = document.createElement("v.title");
+	bigBoxTitle.innerText = v.title;
+
+imagesItem.addEventListener("click",bringBigBox);
+
+function bringBigBox(){
+	imagesList.appendChild(bigBox);
+	bigBox.appendChild(closeButton);
+	bigBox.appendChild(bigBoxImage);
+	bigBoxImage.appendChild(bigImage);
+	bigBoxImage.appendChild(bigBoxTitle);
+}
+
+imagesItem.src=v.image;
+bigImage.src=v.image;
 	
-	imgThumb.innerText = v.title;
-
-	imagesList.appendChild(imgThumb);
-	imgThumb.appendChild(closeButton);
-	imgThumb.appendChild(imagesItem);
-});
-
-
-
-
-
-
 body.appendChild(imagesList);
+
+});
 
 

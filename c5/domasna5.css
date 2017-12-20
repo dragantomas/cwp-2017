@@ -6,47 +6,46 @@
 	list-style: none;
 }
 
-.thumbnail {
-	margin: 2%;
-	width: 29%;
-	height: 350px;
-	background-color: lightgray;
-	float: left;
+.title {
 	text-align: center;
-	padding-top: 20px;
-	position: relative;
+}
+
+h1 {
+	margin-top: 20px;
+	text-align: center;
 }
 
 li {
 	margin: 2%;
 	width: 29%;
 	height: 350px;
-	background-color: lightgray;
+	background-color: black;
 	float: left;
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
+	color: white;
 }
 
 img {
 	display: block;
 	width: 90%;
-	height: 300px;
+	height: 85%;
 	margin: auto;
 	margin-bottom: 5px;
 	object-fit: cover;
 }
 
-.thumbnail:hover .close-button {
+li:hover button {
 	opacity: 1;
 }
 
 button {
 	color: white;
 	font-size: 20px;
-	padding-top: 2px;
-	width: 30px;
-	height: 30px;
+	padding-top: -2px;
+	width: 36px;
+	height: 36px;
 	background-color: red;
 	border-radius: 50%;
 	top: -10px;
@@ -54,4 +53,30 @@ button {
 	opacity: 1;
 	position: absolute;
 	border: none;
+}
+
+.big-box {
+	position: fixed;
+   	z-index: 1;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
+.big-box-image {
+	display: block;
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+	object-fit: cover;
+	text-align: center;
+}
+
+li:hover .big-box {
+	display: block;
+	opacity: 1;
 }
