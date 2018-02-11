@@ -18,6 +18,10 @@ var grad = document.getElementById("grad").value;
 
 		console.log(data);
 
+document.getElementById("grad").style.textTransform = "capitalize";
+
+document.getElementById("izbran-grad").style.textTransform = "capitalize";
+
 document.getElementById("temperatura").innerHTML = data.main.temp + ' °C';
 
 document.getElementById("temp-min").innerHTML = data.main.temp_min + ' °C';

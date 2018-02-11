@@ -1,0 +1,25 @@
+body {
+	background: silver;
+}
+
+* {
+	font-family: sans-serif;
+	}
+
+li {
+	list-style: none;
+	padding: 10px;
+	background: white;
+	margin-bottom: 15px;
+}
+
+.container li {
+	width: 30%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h4 {
+	text-transform: uppercase;
+}

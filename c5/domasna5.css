@@ -25,6 +25,7 @@ li {
 	padding-top: 20px;
 	position: relative;
 	color: white;
+	cursor: pointer;
 }
 
 img {
@@ -34,6 +35,7 @@ img {
 	margin: auto;
 	margin-bottom: 5px;
 	object-fit: cover;
+	cursor: pointer;
 }
 
 li:hover button {
@@ -76,7 +78,7 @@ button {
 	text-align: center;
 }
 
-li:hover .big-box {
+/*li:hover .big-box {
 	display: block;
 	opacity: 1;
-}
+}*/
